@@ -3,23 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.dev.css">
     <title>Akan Name Generator</title>
 </head>
 <body>
-    <div>
-        <form action="submit">
-            <label for="dob">D.O.B</label>
-            <input type="date" name="Date of birth" id="dob">
-            <label for="gender">Gender</label>
-            <select name="gender" id="gender">
-                <option value="">Select</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-            </select>
-        </form>
-        <button id="generate-button">Generate</button>
-    </div>
+   <header>
+        <h1 class="caveat-font main-title"> Akan Name Generator</h1>
+   </header>
+   <main> 
+        <div class="form-container caveat-font">
+            <form action="submit">
+                <div class="form-input caveat-font">
+                    <label for="dob">D.O.B</label>
+                    <input type="date" name="Date of birth" id="dob">
+                </div>
+                <div class="form-input caveat-font">
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender">
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </form>
+            <button class="caveat-font" id="generate-button">Generate</button>
+        </div>
+        <div class="result-window">
+            test
+        </div>
+    </main>
+    <footer>
+
+    </footer>
     <script src="./js/scripts.js"></script>
 </body>
 </html>
